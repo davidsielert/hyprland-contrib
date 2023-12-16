@@ -3,7 +3,7 @@ PREFIX ?= $(DESTDIR)usr/local
 EXEC_PREFIX ?= $(PREFIX)
 BINDIR ?= $(EXEC_PREFIX)/bin
 all: 
-	$(shell chmod +x ${THIS_DIR}shellevents)
+	$(shell chmod +x shellevents)
 
 
 install: shellevents shellevents_default.sh

@@ -4,7 +4,7 @@ EXEC_PREFIX ?= $(PREFIX)
 BINDIR ?= $(EXEC_PREFIX)/bin
 
 all: 
-	$(shell chmod +x ${THIS_DIR}scratchpad)
+	$(shell chmod +x scratchpad)
 
 
 install: scratchpad
