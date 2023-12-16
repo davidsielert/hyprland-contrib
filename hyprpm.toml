@@ -1,47 +1,56 @@
 [repository]
 name = "hyprland-plugins"
-authors = ["Vaxry"]
+authors = ["Vaxry","Misterio77"",Schweber","fufexan","schievel1","trippwill"]
+
 commit_pins = [
-    ["3bb9c7c5cf4f2ee30bf821501499f2308d616f94", "efee74a7404495dbda70205824d6e9fc923ccdae"],
-    ["d74607e414dcd16911089a6d4b6aeb661c880923", "efee74a7404495dbda70205824d6e9fc923ccdae"]
+    ["3bb9c7c5cf4f2ee30bf821501499f2308d616f94", "740dbac96354c076a76b7cf6fe70dad150d21659"],
+    ["d74607e414dcd16911089a6d4b6aeb661c880923", "285e2769edeaabb23cb8a88fb96641c032344968"]
 ]
 
-[borders-plus-plus]
-description = "A plugin to add more borders to windows."
-authors = ["Vaxry"]
-output = "borders-plus-plus/borders-plus-plus.so"
+[grimblast]
+description = "A Hyprland version of Grimshot "
+authors = ["Vaxry","Misterio77"]
+output = "grimblast/grimblast"
 build = [
-    "make -C borders-plus-plus all",
+    "make -C grimblast all",
 ]
 
-[csgo-vulkan-fix]
-description = "A plugin to fix incorrect mouse offsets on csgo in Vulkan"
+[hyprprop]
+description = "a xprop replacement for hyprland"
 authors = ["Vaxry"]
-output = "csgo-vulkan-fix/csgo-vulkan-fix.so"
+output = "hyprprop/hyprprop"
 build = [
-    "make -C csgo-vulkan-fix all",
+    "make -C hyprprop all",
 ]
 
-[hyprbars]
-description = "A plugin to add title bars to windows"
-authors = ["Vaxry"]
-output = "hyprbars/hyprbars.so"
+[hdrop]
+description = "This Bash script emulates the main features of tdrop in Hyprland:"
+authors = ["Schweber","fufexan"]
+output = "hdrop/hdrop"
 build = [
-    "make -C hyprbars all",
+    "make -C hdrop all",
 ]
 
-[hyprtrails]
-description = "A plugin to add trails behind moving windows"
-authors = ["Vaxry"]
-output = "hyprtrails/hyprtrails.so"
+[scratchpad]
+description = "A Bash script that instantly sends focused window to a special workspace named scratchpad and makes it easier to retrieve the window back to the current workspace"
+authors = ["niksingh710"]
+output = "scratchpad/scratchpad.so"
 build = [
-    "make -C hyprtrails all",
+    "make -C scratchpad all",
 ]
 
-[hyprwinwrap]
-description = "A clone of xwinwrap for Hyprland"
-authors = ["Vaxry"]
-output = "hyprwinwrap/hyprwinwrap.so"
+[shellevents]
+description = "Invoke shell functions in response to Hyprland socket2 events"
+authors = ["trippwill"]
+output = "shellevents/shellevents"
 build = [
-    "make -C hyprwinwrap all",
+    "make -C shellevents all",
+]
+
+[try_swap_workspace]
+description = "Binding to mimic the 'arbitrary workspace on arbitrary monitor' behavior"
+authors = ["schievel1"]
+output = "try_swap_workspace/try_swap_workspace"
+build = [
+    "make -C try_swap_workspace all",
 ]
