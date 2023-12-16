@@ -1,18 +1,18 @@
 [repository]
 name = "hyprland-plugins"
-authors = ["Vaxry","Misterio77"",Schweber","fufexan","schievel1","trippwill"]
+authors = ["Vaxry","Misterio77","Schweber","fufexan","schievel2","trippwill"]
 
 commit_pins = [
-    ["3bb9c7c5cf4f2ee30bf821501499f2308d616f94", "740dbac96354c076a76b7cf6fe70dad150d21659"],
-    ["d74607e414dcd16911089a6d4b6aeb661c880923", "285e2769edeaabb23cb8a88fb96641c032344968"]
+    ["3bb9c7c5cf4f2ee30bf821501499f2308d616f94", "38309cd742b25b9e21689f0fc09136948ca2e6f9"],
+    ["d74607e414dcd16911089a6d4b6aeb661c880923", "38309cd742b25b9e21689f0fc09136948ca2e6f9"]
 ]
 
 [grimblast]
-description = "A Hyprland version of Grimshot "
+description = "A Hyprland version of Grimshot"
 authors = ["Vaxry","Misterio77"]
 output = "grimblast/grimblast"
 build = [
-    "make -C grimblast all",
+    "make -C grimblast all"
 ]
 
 [hyprprop]
@@ -20,7 +20,7 @@ description = "a xprop replacement for hyprland"
 authors = ["Vaxry"]
 output = "hyprprop/hyprprop"
 build = [
-    "make -C hyprprop all",
+    "make -C hyprprop all"
 ]
 
 [hdrop]
@@ -36,7 +36,7 @@ description = "A Bash script that instantly sends focused window to a special wo
 authors = ["niksingh710"]
 output = "scratchpad/scratchpad.so"
 build = [
-    "make -C scratchpad all",
+    "make -C scratchpad all"
 ]
 
 [shellevents]
@@ -44,13 +44,13 @@ description = "Invoke shell functions in response to Hyprland socket2 events"
 authors = ["trippwill"]
 output = "shellevents/shellevents"
 build = [
-    "make -C shellevents all",
+    "make -C shellevents all"
 ]
 
 [try_swap_workspace]
-description = "Binding to mimic the 'arbitrary workspace on arbitrary monitor' behavior"
+description = "Binding to mimic the 'arbitrary workspace on arbitrary monitor behavior"
 authors = ["schievel1"]
 output = "try_swap_workspace/try_swap_workspace"
 build = [
-    "make -C try_swap_workspace all",
+    "make -C try_swap_workspace all"
 ]
