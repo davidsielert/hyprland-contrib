@@ -9,7 +9,7 @@ description = "A Hyprland version of Grimshot"
 authors = ["Vaxry","Misterio77"]
 output = "grimblast/grimblast"
 build = [
-    "make -C grimblast all"
+    "make all"
 ]
 
 [hyprprop]
@@ -17,7 +17,7 @@ description = "a xprop replacement for hyprland"
 authors = ["Vaxry"]
 output = "hyprprop/hyprprop"
 build = [
-    "make -C hyprprop all"
+    "make all"
 ]
 
 [hdrop]
@@ -25,7 +25,7 @@ description = "This Bash script emulates the main features of tdrop in Hyprland:
 authors = ["Schweber","fufexan"]
 output = "hdrop/hdrop"
 build = [
-    "make -C hdrop all",
+    "make all",
 ]
 
 [scratchpad]
@@ -33,7 +33,7 @@ description = "A Bash script that instantly sends focused window to a special wo
 authors = ["niksingh710"]
 output = "scratchpad/scratchpad.so"
 build = [
-    "make -C scratchpad all"
+    "make all"
 ]
 
 [shellevents]
@@ -41,7 +41,7 @@ description = "Invoke shell functions in response to Hyprland socket2 events"
 authors = ["trippwill"]
 output = "shellevents/shellevents"
 build = [
-    "make -C shellevents all"
+    "make all"
 ]
 
 [try_swap_workspace]
@@ -49,5 +49,5 @@ description = "Binding to mimic the 'arbitrary workspace on arbitrary monitor be
 authors = ["schievel1"]
 output = "try_swap_workspace/try_swap_workspace"
 build = [
-    "make -C try_swap_workspace all"
+    "make all"
 ]
