@@ -31,7 +31,7 @@ build = [
 [scratchpad]
 description = "A Bash script that instantly sends focused window to a special workspace named scratchpad and makes it easier to retrieve the window back to the current workspace"
 authors = ["niksingh710"]
-output = "scratchpad/scratchpad.so"
+output = "scratchpad/scratchpad"
 build = [
     "make all"
 ]
